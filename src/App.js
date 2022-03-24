@@ -1,46 +1,32 @@
-import './App.css';
-import QRCode from 'qrcode.react';
-import * as api from './api';
-import { useEffect, useState } from 'react';
+import "./App.css";
+import QRCode from "qrcode.react";
+import * as api from "./api";
+import { useEffect, useState } from "react";
+import ImageCarousel from "../src/components/ImageCarousel";
+import images from "../src/components/Images";
 
-function App() {
-  const [images, setImages] = useState([]);
+export default function App() {
+	// const [images, setImages] = useState([]);
 
-  const getImgs = async () => {
-    const data = await api.getImgs();
-    // var ids = data.map(function(item) {
-    //   return item['id'];
-    // });
-    setImages(data);
-    console.log('data', data);
-  }
+	// const getImgs = async () => {
+	// 	const data = await api.getImgs();
+	// 	// var ids = data.map(function(item) {
+	// 	//   return item['id'];
+	// 	// });
+	// 	setImages(data);
+	// 	console.log("data", data);
+	// };
 
-  useEffect(() => {
-    getImgs();
-  }, []);
+	// useEffect(() => {
+	// 	getImgs();
+	// }, []);
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <QRCode value="shorturl.at/btBO3" />
-        {images.map((img) => {
-          return (
-            <p>
-              {img.id}
-            </p>
-          );
-        })}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<ImageCarousel images={images} />
+      <div id="QRCodeWrapper">
+			  <QRCode id="QRCode" value="shorturl.at/btBO3" />
+      </div>
+		</div>
+	);
 }
-
-export default App;
