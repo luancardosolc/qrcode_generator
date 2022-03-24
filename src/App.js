@@ -32,7 +32,7 @@ export default function App() {
 		<div className="App">
 			<ImageCarousel images={images} />
       <div id="QRCodeWrapper">
-			  <QRCode id="QRCode" value="shorturl.at/btBO3" />
+			  <QRCode id="QRCode" value="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/1" />
       </div>
 		</div>
 	);
