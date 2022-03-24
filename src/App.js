@@ -36,8 +36,8 @@ export default function App() {
           <QRCode id="QRCode" value="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/1" />
           <p>QR Code para abrir o Cofre</p>
         </div></>) : (<p>Sem imgs</p>)}
-        <Button href="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/2">Roubar de Volta</Button>
-        <Button onClick={getImgs}>Atualizar</Button>
+        <Button style={{backgroundColor: "grey", color: "white", marginRight: "1%"}} href="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/2">Roubar de Volta</Button>
+        <Button style={{backgroundColor: "#393939", color: "white", marginLeft: "1%" }} onClick={getImgs}>Atualizar</Button>
 		</div>
 	);
 }
