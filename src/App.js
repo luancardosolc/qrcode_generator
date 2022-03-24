@@ -22,12 +22,12 @@ export default function App() {
   // Fim Comentar para testes
 
   // Atualizar imgs frequentementes para atualizar a tela em caso de roubo
-  useEffect(() => {
-    const interval = setInterval(() => {
-      getImgs();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     getImgs();
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
 	return (
 		<div className="App">
