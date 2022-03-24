@@ -23,10 +23,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <QRCode value="shorturl.at/btBO3" />
-        {images.map(() => {
+        {images.map((img) => {
           return (
             <p>
-              Img
+              {img.id}
             </p>
           );
         })}
