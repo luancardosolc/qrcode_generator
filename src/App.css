@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+#QRCodeWrapper {
+  background-color: #fff;
+  padding: 5px;
+}
