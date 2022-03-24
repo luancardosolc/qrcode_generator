@@ -20,7 +20,7 @@ export default function ImageCarousel({ images }) {
       return (
         <a>
           <img
-            src={`data:image/png;base64,${images[i].src}`}
+            src={`data:image/png;base64,${images[i].image}`}
             height="100%"
             width="100%"
             alt={images[i].alt}
@@ -44,7 +44,7 @@ export default function ImageCarousel({ images }) {
           <Slider style={{ width: "39%" }} {...settings} ref={carousel}>
             {images.map((item) => (
               <div key={item.id}>
-                <img src={`data:image/png;base64,${item.src}`} alt={item.alt} />
+                <img src={`data:image/png;base64,${item.image}`} alt={item.alt} />
               </div>
             ))}
           </Slider>
