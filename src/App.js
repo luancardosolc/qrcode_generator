@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import QRCode from 'qrcode.react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <QRCode value="shorturl.at/btBO3" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
