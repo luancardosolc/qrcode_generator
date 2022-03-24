@@ -30,10 +30,10 @@ export default function App() {
 
 	return (
 		<div className="App">
-			<ImageCarousel images={images} />
-      <div id="QRCodeWrapper">
-			  <QRCode id="QRCode" value="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/1" />
-      </div>
+      {images.length > 0 ? 
+			(<><ImageCarousel images={images} /><div id="QRCodeWrapper">
+          <QRCode id="QRCode" value="https://572e-201-49-245-32.ngrok.io/api/SafeBox/HackSafeBox/1" />
+        </div></>) : (<p>Sem imgs</p>)}
 		</div>
 	);
 }
