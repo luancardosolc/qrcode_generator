@@ -10,9 +10,6 @@ export default function App() {
 
 	// const getImgs = async () => {
 	// 	const data = await api.getImgs();
-	// 	// var ids = data.map(function(item) {
-	// 	//   return item['id'];
-	// 	// });
 	// 	setImages(data);
 	// 	console.log("data", data);
 	// };
