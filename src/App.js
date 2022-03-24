@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <QRCode value="shorturl.at/btBO3" />
+      <div id="QRCodeWrapper">
+        <QRCode value="shorturl.at/gvCPT" />
+      </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
